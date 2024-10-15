@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>TableView</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTableView" name="tableView"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>Text</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPlainTextEdit" name="plainTextEdit"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_open_file"/>
+   <addaction name="action_data_view"/>
+   <addaction name="separator"/>
+   <addaction name="action_add_row"/>
+   <addaction name="action_insert_row"/>
+   <addaction name="action_delete_row"/>
+   <addaction name="separator"/>
+   <addaction name="action_left"/>
+   <addaction name="action_center"/>
+   <addaction name="action_right"/>
+   <addaction name="action_bold"/>
+   <addaction name="separator"/>
+   <addaction name="action_quit"/>
+  </widget>
+  <action name="action_open_file">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Disk.png</normaloff>:/icons/Disk.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="action_data_view">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Projector.png</normaloff>:/icons/Projector.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据浏览</string>
+   </property>
+  </action>
+  <action name="action_add_row">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Bowling.png</normaloff>:/icons/Bowling.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加行</string>
+   </property>
+  </action>
+  <action name="action_insert_row">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Cassette.png</normaloff>:/icons/Cassette.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入行</string>
+   </property>
+  </action>
+  <action name="action_delete_row">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Console03.png</normaloff>:/icons/Console03.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除行</string>
+   </property>
+  </action>
+  <action name="action_left">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Disco.png</normaloff>:/icons/Disco.png</iconset>
+   </property>
+   <property name="text">
+    <string>居左</string>
+   </property>
+  </action>
+  <action name="action_center">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Console03.png</normaloff>:/icons/Console03.png</iconset>
+   </property>
+   <property name="text">
+    <string>居中</string>
+   </property>
+  </action>
+  <action name="action_right">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Console03.png</normaloff>:/icons/Console03.png</iconset>
+   </property>
+   <property name="text">
+    <string>居右</string>
+   </property>
+  </action>
+  <action name="action_bold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Disco.png</normaloff>:/icons/Disco.png</iconset>
+   </property>
+   <property name="text">
+    <string>粗体</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/Dice.png</normaloff>:/icons/Dice.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="rsc.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>action_quit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

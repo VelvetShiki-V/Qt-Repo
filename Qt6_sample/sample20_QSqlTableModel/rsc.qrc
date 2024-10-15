@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/add.png</file>
+        <file>icons/add_circle_outlined.png</file>
+        <file>icons/clear.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/folder.png</file>
+        <file>icons/google_play.png</file>
+        <file>icons/home.png</file>
+        <file>icons/photo_album.png</file>
+        <file>icons/photo_gallery_outlined.png</file>
+        <file>icons/puzzle.png</file>
+        <file>icons/save.png</file>
+        <file>icons/stairs_up.png</file>
+        <file>icons/undo.png</file>
+        <file>icons/user_add.png</file>
+    </qresource>
+</RCC>

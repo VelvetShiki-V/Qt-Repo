@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/chuangkou.png</file>
+        <file>icons/chuangkou_1.png</file>
+        <file>icons/iconfont-wo.png</file>
+        <file>icons/program-code-full.png</file>
+        <file>icons/tubiaozhizuomobanyihuifu-.png</file>
+        <file>icons/tuichu.png</file>
+        <file>icons/1.png</file>
+        <file>icons/2.png</file>
+        <file>icons/3.png</file>
+    </qresource>
+</RCC>

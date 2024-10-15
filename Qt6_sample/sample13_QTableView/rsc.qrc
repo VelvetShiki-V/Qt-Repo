@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/Bowling.png</file>
+        <file>icons/Camera.png</file>
+        <file>icons/Cassette.png</file>
+        <file>icons/Computer.png</file>
+        <file>icons/Console03.png</file>
+        <file>icons/Dice.png</file>
+        <file>icons/Dingdong.png</file>
+        <file>icons/Disco.png</file>
+        <file>icons/Disk.png</file>
+        <file>icons/Floppy Disk.png</file>
+        <file>icons/Lego.png</file>
+        <file>icons/Projector.png</file>
+        <file>icons/Vinyl Player.png</file>
+        <file>icons/Vinyl.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>782</width>
+    <height>466</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>555</width>
+         <height>350</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_picture">
+          <property name="text">
+           <string>picture</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>782</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>目录</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>视图</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_add_dir"/>
+   <addaction name="action_add_file"/>
+   <addaction name="separator"/>
+   <addaction name="action_node_traversal"/>
+   <addaction name="action_delete_node"/>
+   <addaction name="separator"/>
+   <addaction name="action_zoom_out"/>
+   <addaction name="action_zoom-in"/>
+   <addaction name="action_restore"/>
+   <addaction name="action_nice_height"/>
+   <addaction name="action_nice_weight"/>
+   <addaction name="separator"/>
+   <addaction name="action_float_window"/>
+   <addaction name="action_window_visible"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="action_add_dir">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/8.png</normaloff>:/icons/icons/8.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加目录</string>
+   </property>
+  </action>
+  <action name="action_add_file">
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/13.png</normaloff>:/icons/icons/13.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加文件</string>
+   </property>
+  </action>
+  <action name="action_delete_node">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/7.png</normaloff>:/icons/icons/7.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除节点</string>
+   </property>
+  </action>
+  <action name="action_node_traversal">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/6.png</normaloff>:/icons/icons/6.png</iconset>
+   </property>
+   <property name="text">
+    <string>遍历节点</string>
+   </property>
+  </action>
+  <action name="action_zoom_out">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/14.png</normaloff>:/icons/icons/14.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="action_zoom-in">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/14.png</normaloff>:/icons/icons/14.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="action_restore">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/9.png</normaloff>:/icons/icons/9.png</iconset>
+   </property>
+   <property name="text">
+    <string>还原</string>
+   </property>
+  </action>
+  <action name="action_nice_height">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/3.png</normaloff>:/icons/icons/3.png</iconset>
+   </property>
+   <property name="text">
+    <string>适合高度</string>
+   </property>
+  </action>
+  <action name="action_nice_weight">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/3.png</normaloff>:/icons/icons/3.png</iconset>
+   </property>
+   <property name="text">
+    <string>适合宽度</string>
+   </property>
+  </action>
+  <action name="action_float_window">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/5.png</normaloff>:/icons/icons/5.png</iconset>
+   </property>
+   <property name="text">
+    <string>窗口浮动</string>
+   </property>
+  </action>
+  <action name="action_window_visible">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rsc.qrc">
+     <normaloff>:/icons/icons/2.png</normaloff>:/icons/icons/2.png</iconset>
+   </property>
+   <property name="text">
+    <string>窗口可见</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="rsc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
