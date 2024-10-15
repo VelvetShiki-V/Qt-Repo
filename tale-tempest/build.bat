@@ -1,0 +1,1 @@
+%QTDIR%\bin\qmake -tp vc -r application.pro

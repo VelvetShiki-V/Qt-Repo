@@ -1,0 +1,114 @@
+# 忽略编译生成的临时文件  
+*.slo  
+*.lo  
+*.o  
+*.obj  
+*.so  
+*.dylib  
+*.a  
+*.lai  
+*.la
+  
+# 忽略Qt Creator生成的配置文件  
+*.pro.user  
+*.user  
+*.autosave  
+*.orig  
+CMakeLists.txt.user  
+  
+# 忽略Qt的qmake生成的临时文件  
+*.qmake.cache  
+*.qmake.stash  
+  
+# 忽略Protobuf生成的文件  
+*.pb.h  
+*.pb.cc  
+  
+# 忽略预编译头文件  
+*.gch  
+*.pch  
+  
+# 忽略核心转储文件  
+core  
+  
+# 忽略其他临时文件  
+*.swap  
+*.tmp  
+*.autosave  
+*.moc  
+*.rej  
+*.debug  
+*.ilk  
+*.pdb  
+*.ncb  
+*.sdf  
+*.opensdf  
+*.user  
+*.orig  
+*.res  
+*.rc  
+*.pch  
+*.tlb  
+*.tli  
+*.tlh  
+*.tmp  
+*.log  
+*.ii  
+*.iii  
+*.ipdb  
+*.ipch  
+*.aps  
+*.pch  
+*.rsp  
+*.sbr  
+*.sbr.bak  
+*.tlb  
+*.tli  
+*.tlh  
+*.suo  
+*.idb  
+*.pdb  
+*.ilk  
+*.exp  
+  
+# 忽略UI设计器生成的文件  
+ui_*.h  
+qrc_*.cpp  
+moc_*.cpp  
+  
+# 忽略IDE和编辑器相关文件  
+.DS_Store  
+Thumbs.db  
+.idea/  
+.vscode/  
+*.swp  
+*.flc  
+*.iml  
+*.iml.idea  
+*.ipr  
+*.iws  
+*.suo  
+*.vcxproj.filters  
+*.vcxproj.user  
+*.ncb  
+*.opendb  
+*.sdf  
+*.opensdf  
+*.sln.DotSettings.user  
+  
+# 忽略构建目录  
+build/  
+debug/  
+release/  
+  
+# 忽略第三方库和依赖  
+lib/  
+libs/  
+third_party/  
+vendor/  
+  
+# 忽略特定文件（如果有）  
+#1.txt  
+#*.txt  
+  
+# 注意：以'#'开头的行为注释，不会被Git处理

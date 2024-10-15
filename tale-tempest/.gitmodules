@@ -1,0 +1,12 @@
+[submodule "utilities"]
+	path = main/utilities
+	url = https://cloud.myemc.net.cn:3000/swd/utilities.git
+	branch = master
+[submodule "dist"]
+	path = dist
+	url = https://cloud.myemc.net.cn:3000/swd/dist.git
+	branch = master
+[submodule "python-3.8.10"]
+	path = tool/python-3.8.10
+	url = https://cloud.myemc.net.cn:3000/swd/python-3.8.10.git
+	branch = master
